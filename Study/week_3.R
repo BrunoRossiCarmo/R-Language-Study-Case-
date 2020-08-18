@@ -9,7 +9,7 @@ barplot(sample(1:10,20,replace = TRUE), col = "300")
 
 
 #Pie:
-pie(sample(1:10,4,replace = TRUE), labels = c("Medo","Odio","Raiva","Tristeza"), col = c("900","200","150","450"), main = "Distribição das Motivações de Ataques")
+pie(sample(1:10,4,replace = TRUE), labels = c("Medo","Odio","Raiva","Tristeza"), col = c("900","200","150","450"), main = "DistribiÃ§Ã£o das MotivaÃ§Ãµes de Ataques")
 example(pie)
 ?pie
 
