@@ -160,3 +160,4 @@ right.coord
 all.data <- merge(longab2,right.coord)
 all.data
 #Now everything is fine!
+
