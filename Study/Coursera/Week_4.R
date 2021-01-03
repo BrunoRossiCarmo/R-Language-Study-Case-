@@ -63,7 +63,7 @@ copy<-other
 copy[copy>0]<-1
 enrichment <- rowSums(copy)
 average_enrichment<- mean(enrichment)
-city_enr <- tapply(enrichment, amb$município, mean)
+city_enr <- tapply(enrichment, amb$municÃ­pio, mean)
 
 #Data pt.2:
 amb<- simu[,1:6]
@@ -81,18 +81,18 @@ simu[order(simu$altitude),]
 order(simu$altitude)
 #For us really saw the order, we need to use order function out of the "simu[]".
 par(mfrow=c(2,2))
-stripchart(enrichment~factor(simu[,"município"]), vertical = TRUE, method = "stack", offset = 1)
+stripchart(enrichment~factor(simu[,"municÃ­pio"]), vertical = TRUE, method = "stack", offset = 1)
 par(mfrow = c(1,1))
 
 #By and Aggregate:
-test <-aggregate(other, list(simu$município), mean)
+test <-aggregate(other, list(simu$municÃ­pio), mean)
 test
 ?aggreggat
 ?by
 options(stringsAsFactors = FALSE)
 test <- by(other,simu[,1], order)
 test
-test[["Lençóis"]]
+test[["LenÃ§Ã³is"]]
 #To access List we need to use double "["
 
 #Which:
