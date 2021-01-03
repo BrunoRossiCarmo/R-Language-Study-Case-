@@ -26,7 +26,7 @@ rep(1:2, each = 2)
 rep(2, each = 2)
 rep(c("A","B"),each=5)
 rep(c("A","B"),5)
-rep(c("Três","Dois","Sete","Quatro"),c(3,2,7,4)) 
+rep(c("TrÃªs","Dois","Sete","Quatro"),c(3,2,7,4)) 
 
 #Generating Data:
 #runiff (Uniform Distribution)
