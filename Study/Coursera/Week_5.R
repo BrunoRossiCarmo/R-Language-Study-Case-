@@ -119,8 +119,8 @@ diversity(matrix,"shannon",MARGIN = 1)
 Jaccard <- 
         function(x){
         if(any(x>1)){
-                stop("Erro: é preciso fornecer uma tabela com dados de +
-presença e ausência")
+                stop("Erro: Ã© preciso fornecer uma tabela com dados de +
+presenÃ§a e ausÃªncia")
         }
         n <- nrow(x)
         jac <- matrix(NA,n,n)
