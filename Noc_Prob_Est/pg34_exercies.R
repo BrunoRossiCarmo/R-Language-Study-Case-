@@ -2,12 +2,12 @@
 #03/01/21
 #brunorossicarmo@usp.br
 
-dir.main <- "C:\\Users\\bruno\\Desktop\\Usp\\Grad\\Est\\Docs\\"
+dir.main <- "C:\\Users\\Your_Path"
 setwd(dir.main)
 
 #Ex1(PG.34):
 
-var <- c("Id","Turma","Gênero","Idade","Alt","Peso","Filhos","Fuma","Toler","Exer","Cine")
+var <- c("Id","Turma","GÃªnero","Idade","Alt","Peso","Filhos","Fuma","Toler","Exer","Cine")
 id<- c(seq(1:10))
 listraw <- list(id,var)
 raw_data <- matrix(rep(0,110),ncol=11,nrow=10)
@@ -20,7 +20,7 @@ arquivo <- read.table("arquivo_de_estudo.txt", header = T)
 
 #Functions:
 variavel <- function(n){
-        integer <- readline(prompt = "É num? (T/F): ")
+        integer <- readline(prompt = "Ã‰ num? (T/F): ")
         respo <- ifelse(integer=="T",1,0)
         mat <- numeric(0)
         for(i in 1:n){
@@ -35,7 +35,7 @@ variavel <- function(n){
 #Organizar:
 arquivo$Id <- seq(1:10)
 arquivo$Turma <- c(rep("A",10))
-arquivo$Gênero <-c("F","F","M","M","F","M","F","F","F","M")
+arquivo$GÃªnero <-c("F","F","M","M","F","M","F","F","F","M")
 arquivo$Idade <- variavel(10)
 arquivo$Alt <- variavel(10)
 arquivo$Peso <- variavel(10)
@@ -48,7 +48,7 @@ arquivo$Cine <- variavel(10)
 #VISUALZAR
 write.table(arquivo,file = "arquivo_de_estudo_organizado.txt", sep = "\t",row.names=T,col.names=NA)
 
-#Observação das Variáveis:
+#ObservaÃ§Ã£o das VariÃ¡veis:
 hist(arquivo$Peso, breaks=4, col=3, main = "Histograma de Frequencias de Peso",xlab = "Peso")
 boxplot(arquivo$Peso)
 
